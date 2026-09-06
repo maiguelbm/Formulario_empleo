@@ -1,21 +1,28 @@
+
 :root{
+  
   --azul: #f2fafc;
   --azul-osc: #d9f1f6;
   --negro: #111;
   --borde: #333;
   --franja: 3px; /* grosor de la franja decorativa negra */
+  
 }
 
 body{
+  
   font-family:sans-serif;
   background:#e9edf0;
   margin:0;
   padding:10px;
   color:var(--negro);
+  
 }
 
+/* de claude*/
 
 .toolbar{
+  
   max-width:950px;
   margin:0 auto 16px auto;
   display:flex;
@@ -27,6 +34,7 @@ body{
   padding:12px 16px;
   border-radius:8px;
   box-shadow:0 1px 4px rgba(0,0,0,.15);
+  
 }
 .toolbar .status{
   font-size:13px;
@@ -55,6 +63,7 @@ body{
 
 /*franja decorativa negra (derecha u abajo)
    Se aplica envolviendo cada recuadro en un div.franja-box.
+
    El truco: el ::after es un rectángulo negro desplazado hacia
    abajo-derecha que queda detrás del recuadro blanco/azul,
    simulando la franja de sombra sólida del formato original. */
@@ -88,6 +97,7 @@ body{
 .franja-box.chico::after{
   border-radius:4px;
 }
+
 .franja-box.chico > .franja-content{
   border-radius:4px;
   border:1px solid var(--borde);
@@ -143,28 +153,46 @@ body{
 /* ---------- Utilidades (evitan repetir estilos en línea) ---------- */
 
 .center{ text-align:center; }
+
 .mt4{ margin-top:4px; }
+
 .mt6{ margin-top:6px; }
+
 .mb6{ margin-bottom:6px; }
+
 .flex1{ flex:1; }
+
 .hv-title{ font-size:25px; }
+
 .w15{ width:15%; }
+
 .w20{ width:20%; }
+
+
 .w33{ width:33%; }
+
 .w34{ width:34%; }
+
 .w40{ width:40%; }
+
 .w45{ width:45%; }
+
 .w60{ width:60%; }
+
 .w220{ width:220px; }
 
 /* ---------- Títulos de sección ---------- */
 .section-title{
+  
   display:flex;
   align-items:center;
   gap:0;
   margin:18px 0 6px 0;
+  
 }
+
 .section-title .num{
+  
   background:var(--negro);
   color:#fff;
   width:26px;height:26px;
@@ -174,12 +202,16 @@ body{
   font-size:13px;
   flex-shrink:0;
   z-index:1;
+  
 }
+
 .section-title .separador{
   font-size:20px;
   color:blue;
   margin:0 4px;
+  
 }
+
 .section-title .label{
   background:var(--negro);
   color:#fff;
@@ -188,32 +220,37 @@ body{
   padding:5px 16px;
   border-radius:14px;
   margin-left:-14px;
+  
 }
 
-/* ---------- Tablas del formulario ---------- */
+/* ---------- Tablas del formulario ---------- */ /* con correciones de claude*/
 table.formtable{
   width:100%;
   border-collapse:collapse;
   background:var(--azul);
 }
+
 table.formtable td, table.formtable th{
   border:1px solid var(--borde);
   padding:5px 6px;
   vertical-align:top;
   font-size:11px;
 }
+
 table.formtable th{
   background:var(--azul-osc);
   text-align:left;
   font-style:italic;
   font-weight:normal;
 }
+
 .lbl{
   font-style:italic;
   font-size:10px;
   display:block;
   margin-bottom:3px;
   color:#222;
+  
 }
 
 /* ---------- Campos ---------- */
@@ -226,10 +263,12 @@ input[type=text], input[type=email], input[type=number]{
   padding:2px 2px;
   font-family:inherit;
 }
+
 input[type=text]:focus, input[type=email]:focus, input[type=number]:focus{
   outline:none;
   background:#fff;
 }
+
 .mini-input{ width:38px !important; text-align:center; display:inline-block; }
 .year-input{ width:55px !important; text-align:center; display:inline-block; }
 
@@ -239,26 +278,34 @@ input[type=text]:focus, input[type=email]:focus, input[type=number]:focus{
   gap:6px;
   flex-wrap:wrap;
 }
+
 .checkbox-row label{
   display:flex;
   align-items:center;
   gap:3px;
   font-size:11px;
   white-space:nowrap;
+  
 }
 
+
 .grade-boxes{ display:flex; gap:4px; flex-wrap:wrap; }
+
 .grade-boxes label{
+  
   display:flex;
   flex-direction:column;
   align-items:center;
   font-size:10px;
+  
 }
+
 .grade-boxes input[type=checkbox]{ width:16px;height:16px; margin-top:2px; }
 
 .note{ font-size:10px; font-style:italic; margin:4px 0 8px 0; }
 
 .subhead{
+  
   background:var(--azul-osc);
   font-weight:bold;
   font-style:italic;
@@ -266,13 +313,17 @@ input[type=text]:focus, input[type=email]:focus, input[type=number]:focus{
   padding:4px 6px;
   border:1px solid var(--borde);
   border-bottom:none;
+  
 }
+
 
 /* ---------- Bloques de experiencia laboral ---------- */
 .job-block table{
   width:100%;
   border-collapse:collapse;
+  
 }
+
 .job-block td{
   border:1px solid var(--borde);
   padding:5px 6px;
@@ -280,6 +331,7 @@ input[type=text]:focus, input[type=email]:focus, input[type=number]:focus{
   vertical-align:top;
   background:var(--azul);
 }
+
 .job-block .jobhead{
   background:var(--azul-osc);
   font-weight:bold;
@@ -288,25 +340,33 @@ input[type=text]:focus, input[type=email]:focus, input[type=number]:focus{
   padding:4px 8px;
   text-align:center;
   border-bottom:1px solid var(--borde);
+  
 }
 
 .date-fields{ display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+
 .date-fields span{ font-size:10px; }
 
 
 /* ---------- Bloques de firma / juramento / observaciones ---------- */
 .juramento-box{
+  
   background:var(--azul);
   padding:10px;
   font-size:11px;
+  
 }
+
 .juramento-box .opciones{
+  
   margin:6px 0;
   display:flex;
   gap:16px;
   align-items:center;
   flex-wrap:wrap;
+  
 }
+
 textarea{
   width:100%;
   min-height:90px;
@@ -316,7 +376,9 @@ textarea{
   padding:6px;
   resize:vertical;
   background:#fff;
+  
 }
+
 .firma-line{
   margin-top:40px;
   border-top:1px solid #333;
@@ -327,29 +389,30 @@ textarea{
   padding-top:4px;
   font-size:10px;
   font-style:italic;
+  
 }
+
 .two-col{
+  
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:0;
+  
 }
+
 .footer-note{
   text-align:center;
   font-size:9px;
   color:#555;
   margin-top:10px;
+  
 }
 
-@media print{
-  body{background:#fff;padding:0;}
-  .toolbar{display:none;}
-  .franja-box::after{ display:none; } /* evita duplicar sombras al imprimir */
-  .franja-box > .franja-content{ border:1px solid #000; }
-  .sheet{ page-break-after:always; }
-}
 
 @media (max-width:700px){
+  
   .two-col{ grid-template-columns:1fr; }
   .doc-header{ flex-direction:column; }
   :root{ --franja:4px; }
+  
 }
