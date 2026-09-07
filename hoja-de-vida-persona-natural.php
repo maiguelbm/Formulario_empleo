@@ -49,7 +49,7 @@
     
   </div>
 
-  <div class="section-title"><div class="num">1</div><span class="separador">—</span><div class="label">DATOS PERSONALES</div></div>
+  <div class="section-title"> <div class="num">1</div><h3 style="font-size: 20px; color: blue;">—</h3> <div class="label">DATOS PERSONALES</div></div>
   
   <div class="franja-box chico">
     
@@ -161,7 +161,7 @@
     </div>
   </div>
 
-  <div class="section-title"><div class="num">2</div><span class="separador">—</span><div class="label">FORMACIÓN ACADÉMICA</div></div>
+  <div class="section-title"><div class="num">2</div><h3 style="font-size: 20px; color: blue;">—</h3><div class="label">FORMACIÓN ACADÉMICA</div></div>
 
   <div class="franja-box chico">
     <div class="franja-content">
@@ -356,7 +356,7 @@
     
   </div>
 
-  <div class="section-title"><div class="num">3</div><span class="separador">—</span><div class="label">EXPERIENCIA LABORAL</div></div>
+  <div class="section-title"><div class="num">3</div><h3 style="font-size: 20px; color: blue;">—</h3><div class="label">EXPERIENCIA LABORAL</div></div>
   
   <div class="note">Relacione su experiencia laboral o de prestación de servicios en estricto orden cronológico comenzando por el actual.</div>
   
@@ -562,7 +562,7 @@
     
   </div>
 
-  <div class="section-title"><div class="num">4</div><span class="separador">—</span><div class="label">TIEMPO TOTAL DE EXPERIENCIA</div></div>
+  <div class="section-title"><div class="num">4</div><h3 style="font-size: 20px; color: blue;">—</h3><div class="label">TIEMPO TOTAL DE EXPERIENCIA</div></div>
   
   <div class="note">Indique el tiempo total de su experiencia laboral en número de años y meses.</div>
   
@@ -608,7 +608,7 @@
     </div>
   </div>
 
-  <div class="section-title"><div class="num">5</div><span class="separador">—</span><div class="label">FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</div></div>
+  <div class="section-title"><div class="num">5</div><h3 style="font-size: 20px; color: blue;">—</h3><div class="label">FIRMA DEL SERVIDOR PÚBLICO O CONTRATISTA</div></div>
   
   <div class="franja-box chico">
     
@@ -633,7 +633,7 @@
     
   </div>
 
-  <div class="section-title"><div class="num">6</div><span class="separador">—</span><div class="label">OBSERVACIONES DEL JEFE DE RECURSOS HUMANOS Y/O CONTRATOS</div></div>
+  <div class="section-title"><div class="num">6</div><h3 style="font-size: 20px; color: blue;">—</h3><div class="label">OBSERVACIONES DEL JEFE DE RECURSOS HUMANOS Y/O CONTRATOS</div></div>
   
   <div class="franja-box chico">
     
@@ -645,7 +645,7 @@
       
     <div class="two-col" style="margin-top:20px">
       
-        <div class="checkbox-row"><span>Ciudad y fecha:</span><input type="text" name="rrhh_ciudad_fecha" style="flex:1"></div>
+        <div class="checkbox-row"><span>Ciudad y fecha:</span><input type="text" name="rrhh_ciudad_fecha" style="flex:1"><br><br><br><br><br><br><br><br><br><br></div>
       </div>
       
       <div class="firma-line" style="margin-top:0">NOMBRE Y FIRMA DEL JEFE DE PERSONAL O DE CONTRATOS</div>
